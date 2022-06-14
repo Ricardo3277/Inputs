@@ -18,6 +18,10 @@ function App() {
     return ( <
         div className = "App" >
         <
+        div className = "Text1" >
+        <
+        h1 > Add New User < /h1> <
+        /div> <
         input type = "text"
         name = "name"
         className = "Name"
@@ -44,12 +48,15 @@ function App() {
         } >
         Add user <
         /button> <
-        ul className = "list" > {
+        div >
+        <
+        ul className = "ul-vertical" > {
             people.map((person, idx) => ( <
                 li id = { idx } > { `${person.name} ${person.lastName}` } < /li>
             ))
         } <
         /ul> <
+        /div> <
         /div>
     );
 }
