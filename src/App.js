@@ -44,7 +44,7 @@ function App() {
         } >
         Add user <
         /button> <
-        ul > {
+        ul className = "list" > {
             people.map((person, idx) => ( <
                 li id = { idx } > { `${person.name} ${person.lastName}` } < /li>
             ))
